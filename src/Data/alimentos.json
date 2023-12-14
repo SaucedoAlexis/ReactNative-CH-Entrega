@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pollo al horno",
+    "ingredientes": [
+      "1 pollo entero",
+      "1 cebolla",
+      "2 dientes de ajo",
+      "1 cucharada de aceite de oliva",
+      "1 cucharadita de sal",
+      "1/2 cucharadita de pimienta negra"
+    ],
+    "instrucciones": [
+      "Precalentar el horno a 200 grados centígrados.",
+      "Lavar y secar el pollo.",
+      "Cortar la cebolla en rodajas finas.",
+      "Pelar y picar los ajos.",
+      "En una fuente para horno, colocar el pollo con la piel hacia arriba.",
+      "Salpimentar el pollo por dentro y por fuera.",
+      "Colocar la cebolla y los ajos alrededor del pollo.",
+      "Rociar el pollo con el aceite de oliva.",
+      "Hornear el pollo durante 1 hora o hasta que esté cocido."
+    ],
+    "categorías": ["Plato principal", "Pollo", "Horneado"],
+    "img":"https://cocinemosjuntos.com.co/media/mageplaza/blog/post/t/i/tips-para-preparar-pollo-al-horno-jugoso-y-perfecto_1_.jpg"
+  },
+  {
+    "id": 2,
+    "img":"https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2013/11/sopa-de-cocido.jpg",
+    "nombre": "Sopa de fideos",
+    "ingredientes": [
+      "1 litro de caldo de pollo",
+      "100 gramos de fideos",
+      "1 cebolla",
+      "2 dientes de ajo",
+      "1 zanahoria",
+      "1 tomate",
+      "1/2 taza de perejil picado"
+    ],
+    "instrucciones": [
+      "Calentar el caldo de pollo en una olla a fuego medio.",
+      "Cortar la cebolla en cubos pequeños.",
+      "Pelar y picar los ajos.",
+      "Pelar y picar la zanahoria.",
+      "Pelar y picar el tomate.",
+      "Agregar la cebolla, los ajos, la zanahoria y el tomate al caldo de pollo.",
+      "Dejar hervir durante 10 minutos.",
+      "Agregar los fideos y cocinarlos según las instrucciones del paquete.",
+      "Agregar el perejil picado y servir."
+    ],
+    "categorías": ["Entrada", "Sopa"]
+  },
+  {
+    "id": 3,
+    "nombre": "Pizza",
+    "img":"https://i0.wp.com/cremigal.com/wp-content/uploads/2022/04/CREMIGAL-10-scaled.jpg?fit=960%2C640&ssl=1",
+    "ingredientes": [
+      "1 masa para pizza",
+      "1 taza de salsa de tomate",
+      "100 gramos de queso mozzarella rallado",
+      "Ingredientes adicionales al gusto, como jamón, champiñones, cebolla, etc."
+    ],
+    "instrucciones": [
+      "Precalentar el horno a 250 grados centígrados.",
+      "tender la masa para pizza en una bandeja para hornear.",
+      "Cubrir la masa con la salsa de tomate.",
+      "Espolvorear el queso mozzarella rallado.",
+      "Agregar los ingredientes adicionales al gusto.",
+      "Hornear la pizza durante 15-20 minutos o hasta que el queso esté dorado."
+    ],
+    "categorías": ["Plato principal", "Pizza"]
+  },
+  {
+    "id": 4,
+    "nombre": "Pastel de tres leches",
+    "img":"https://cdn0.recetasgratis.net/es/posts/0/1/9/torta_tres_leches_8910_orig.jpg",
+    "ingredientes": [
+      "1 taza de harina",
+      "1 cucharadita de polvo de hornear",
+      "1/2 cucharadita de bicarbonato de sodio",
+      "1/2 cucharadita de sal",
+      "1 taza de azúcar",
+      "1/2 taza de mantequilla sin sal, derretida",
+      "2 huevos",
+      "1 cucharadita de extracto de vainilla",
+      "1 taza de leche",
+      "1 lata (14 onzas) de leche condensada azucarada",
+      "1 lata (12 onzas) de crema de leche"
+    ],
+    "instrucciones": [
+      "Precalentar el horno a 350 grados F (175 grados C). Engrase y enharine un molde para pastel de 9 pulgadas.",
+      "En un tazón grande, combine la harina, el polvo de hornear, el bicarbonato de sodio y la sal. En otro tazón, bata el azúcar y la mantequilla hasta que quede esponjoso. Agregue los huevos uno a uno, batiendo bien después de cada adición. Agregue la vainilla.",
+      "Agregue los ingredientes secos a los ingredientes húmedos alternando con la leche, comenzando y terminando con los ingredientes secos. Vierta la masa en el molde preparado.",
+      "En un tazón pequeño, combine la leche condensada azucarada y la crema de leche. Vierta la mezcla de leche sobre la masa.",
+      "Hornee durante 30-35 minutos, o hasta que un palillo insertado en el centro salga limpio. Deje enfriar completamente antes de servir."
+    ],
+    "categorías": ["Postre", "Pastel", "Tres leches"]
+  },
+  {
+    "id": 5,
+    "nombre": "Ensalada César",
+    "img":"https://www.gourmet.cl/wp-content/uploads/2016/09/Ensalada_C%C3%A9sar-web-553x458.jpg",
+    "ingredientes": [
+      "1 cabeza de lechuga romana, cortada en trozos",
+      "1/2 taza de queso parmesano rallado",
+      "1/4 taza de pan rallado",
+      "1/4 taza de aceite de oliva",
+      "2 cucharadas de jugo de limón",
+      "1 cucharadita de mostaza Dijon",
+      "1/2 cucharadita de sal",
+      "1/4 cucharadita de pimienta negra"
+    ],
+    "instrucciones": [
+      "En un tazón grande, combine la lechuga, el queso parmesano y el pan rallado.",
+      "En un tazón pequeño, combine el aceite de oliva, el jugo de limón, la mostaza Dijon, la sal y la pimienta negra. Batir hasta emulsionar.",
+      "Vierte la vinagreta sobre la ensalada y revuelve para cubrir.",
+      "Sirve inmediatamente."
+    ],
+    "categorías": ["Ensalada", "César"]
+  }
+]
