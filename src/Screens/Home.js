@@ -1,19 +1,19 @@
-
 import Button from "../componentes/Button";
-import Header from "../componentes/Header";
-import { Pressable, StatusBar, StyleSheet, Text } from "react-native";
-import ItemListCategories from "./ItemListCategories";
+import { StyleSheet } from "react-native";
 import { colors } from "../Global/colors";
 
-const Home = ({press}) => {
+const Home = ({ navigation, route }) => {
   return (
     <>
-      <StatusBar />
-      <Header screenName="Home" />
-      <Button textName="Cátegorías" textStyle={styles.option} press={press}/>
-      
+      <Button
+        textName="Cátegorías"
+        textStyle={styles.option}
+        navigation={navigation}
+        route={route}
+        press={() => navigation.navigate("DishCategories")}
+      />
     </>
-  )
+  );
 };
 
 export default Home;
@@ -25,6 +25,6 @@ const styles = StyleSheet.create({
     padding: 10,
     fontSize: 30,
     backgroundColor: `${colors.secundario}`,
-    fontWeight:"bold"
+    fontWeight: "bold",
   },
 });

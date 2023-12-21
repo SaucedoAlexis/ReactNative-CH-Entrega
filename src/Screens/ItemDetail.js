@@ -1,22 +1,10 @@
-import {
-  ScrollView,
-  Image,
-  Pressable,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
+import { ScrollView, Image, StyleSheet, Text, View } from "react-native";
 
-import Header from "../componentes/Header";
+const ItemDetail = ({ route }) => {
+  const { item } = route.params;
 
-
-const ItemDetail = ({ item, back }) => {
   return (
     <ScrollView>
-      <Header screenName="Plato"></Header>
-      <Pressable onPress={back}>
-        <Text style={{fontSize:50, textAlign:"center"}}>⬅</Text>
-      </Pressable>
       <View style={styles.conatiner}>
         <Image source={{ uri: item.img }} style={styles.img} />
         <Text style={styles.title}>{item.nombre}</Text>
@@ -61,19 +49,14 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 40,
-    fontFamily:"PoppinsBold"
-    
   },
   subtitulo: {
-    fontSize: 30,    
-    fontFamily:"PoppinsBold"
+    fontSize: 30,
   },
   contenido: {
     fontSize: 20,
     alignSelf: "flex-start",
     padding: 10,
     fontWeight: "600",
-    fontFamily:"PreahvihearRegular"
-    
   },
 });
