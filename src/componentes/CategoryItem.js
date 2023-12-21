@@ -2,13 +2,14 @@ import { Pressable, StyleSheet, Text } from "react-native";
 import React from "react";
 import { colors } from "../Global/colors";
 
-const CategoryItem = ({ category, categoryPress }) => {
+const CategoryItem = ({ category, categoryPress}) => {
   return (
     <>
     
     <Pressable style={styles.container} onPress={categoryPress}>
       <Text style={styles.text}>{category}</Text>
     </Pressable>
+    
     </>
   );
 };
