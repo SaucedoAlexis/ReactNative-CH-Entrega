@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   appTitle: {
     fontSize: 35,
     textAlign: "center",
-    paddingVertical: 15,
+    paddingVertical: 5,
     
     fontFamily:"PoppinsBold"
     
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   appSite: {
     textAlign: "center",
     fontSize: 30,
-    paddingVertical: 15,
+    paddingVertical: 5,
     fontFamily:"PreahvihearRegular"
   },
 });

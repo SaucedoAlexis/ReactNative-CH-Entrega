@@ -1,6 +1,17 @@
-import { ScrollView, Image, StyleSheet, Text, View } from "react-native";
+import {
+  ScrollView,
+  Image,
+  StyleSheet,
+  Text,
+  View,
+  Pressable,
+} from "react-native";
+import { Entypo } from "@expo/vector-icons";
+import { useState } from "react";
 
 const ItemDetail = ({ route }) => {
+  const [isSave, setIsSave] = useState(false);
+
   const { item } = route.params;
 
   return (
@@ -28,6 +39,14 @@ const ItemDetail = ({ route }) => {
             </Text>
           ))}
         </View>
+        {/* Función para en el futuro guardar en la base de datos las recetas al apretar el diskette */}
+        {isSave == false ? (
+          <Pressable onPress={() => setIsSave(true)}>
+            <Entypo name="save" size={50} color="black" />
+          </Pressable>
+        ) : (
+          <Text style={styles.save}>Ha guardado esta receta!!!😁</Text>
+        )}
       </View>
     </ScrollView>
   );
@@ -59,4 +78,5 @@ const styles = StyleSheet.create({
     padding: 10,
     fontWeight: "600",
   },
+  save: { fontSize: 30, color: "#555555", fontWeight: "bold" },
 });
