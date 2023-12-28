@@ -1,20 +1,14 @@
 import { FlatList, Pressable, StyleSheet, Text } from "react-native";
-import CategoryItem from "./CategoryItem";
+import CategoryItem from "../componentes/CategoryItem";
 import { colors } from "../Global/colors";
-
-const FilterDishesComponent = ({
-  clearCategory,
-  categoriesFilter,
-  navigation,
-  route,
-}) => {
-  const handlerClearCat = () => {
-    clearCategory();
-  };
-
+import { useSelector } from "react-redux";
+const FilterDishes = ({navigation}) => {
+  
+  const categoriesFilter = useSelector((state) => state.dishes.value.dishesFilter);
+  
   return (
     <>
-      <Pressable onPress={handlerClearCat} style={styles.clearButton}>
+      <Pressable onPress={() => navigation.navigate("DishCategories")} style={styles.clearButton}>
         <Text style={styles.clearButton__text}>Limpiar Filtro</Text>
       </Pressable>
       <FlatList
@@ -24,7 +18,7 @@ const FilterDishesComponent = ({
           <CategoryItem
             category={item.nombre}
             categoryPress={() => navigation.navigate("Dish", { item: item })}
-            route={route}
+            
           ></CategoryItem>
         )}
       />
@@ -32,7 +26,7 @@ const FilterDishesComponent = ({
   );
 };
 
-export default FilterDishesComponent;
+export default FilterDishes;
 
 const styles = StyleSheet.create({
   clearButton: {

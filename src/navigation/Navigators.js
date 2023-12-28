@@ -1,44 +1,54 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Home from "../Screens/Home";
-import ItemDetail from "../Screens/ItemDetail";
-import ItemListCategories from "../Screens/ItemListCategories";
-import Header from "../componentes/Header";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import DishesStack from "./DishesStack";
+import OurDishStack from "./OurDishStack";
+import { StyleSheet } from "react-native-web";
+import { colors } from "../Global/colors";
+import TabIcon from "../componentes/TabIcon";
 
-const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 const Navigators = () => {
   return (
     <>
-      
       <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName="Home"
-          screenOptions={({ route }) => {
-            return {
-              header: () => (
-                <Header
-                  screenName={
-                    route.name == "Home"
-                      ? "Bienvenido"
-                      : route.name == "DishCategories"
-                      ? "Tipos de platos"
-                      : route.name == "Dish"
-                      ? "Plato"
-                      : ""
-                  }
-                />
-              ),
-            };
+        <Tab.Navigator
+          screenOptions={{
+            headerShown: false,
+            tabBarShowLabel: false,
+            tabBarStyle: styles.tabBar,
           }}
         >
-          <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="Dish" component={ItemDetail} />
-          <Stack.Screen name="DishCategories" component={ItemListCategories} />
-        </Stack.Navigator>
+          <Tab.Screen
+            name="DishStack"
+            component={DishesStack}
+            options={{
+              tabBarIcon: () => (
+                <TabIcon iconName={"food-variant"} name={"Platos"}></TabIcon>
+              ),
+            }}
+          />
+          <Tab.Screen
+            name="OurDishesStack"
+            component={OurDishStack}
+            options={{
+              tabBarIcon: () => (
+                <TabIcon iconName={"food-turkey"} name={"Mis Platos"}></TabIcon>
+              ),
+            }}
+          />
+        </Tab.Navigator>
       </NavigationContainer>
     </>
   );
 };
 
 export default Navigators;
+
+const styles = StyleSheet.create({
+  tabBar: {
+    backgroundColor: colors.terciario,
+    borderColor: "black",
+    height: 70,
+  },
+});

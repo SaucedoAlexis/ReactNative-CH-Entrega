@@ -1,13 +1,16 @@
-import { FlatList, StyleSheet} from "react-native";
-import React from "react";
+import { FlatList} from "react-native";
+import { useDispatch } from "react-redux";
 import CategoryItem from "./CategoryItem";
+import {setCategoryFilter} from "../features/dishes/dishesSlice";
 
-const CategoryComponent = ({data, setItem}) => {
+const CategoryComponent = ({ data, navigation }) => {
+  const dispatch = useDispatch();
+  
+  const handlePress = (item) => {
+    dispatch(setCategoryFilter(item));
 
-  const handlerItem = (item) =>{
-    setItem(item)
-  }
-
+    navigation.navigate("FilterDishes");
+  };
   return (
     <>
       <FlatList
@@ -17,7 +20,7 @@ const CategoryComponent = ({data, setItem}) => {
           <>
             <CategoryItem
               category={item}
-              categoryPress={()=> handlerItem(item)}
+              categoryPress={()=>handlePress(item)}
             ></CategoryItem>
           </>
         )}
@@ -28,4 +31,4 @@ const CategoryComponent = ({data, setItem}) => {
 
 export default CategoryComponent;
 
-const styles = StyleSheet.create({});
+
