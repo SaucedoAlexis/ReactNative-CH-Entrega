@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pollo al horno",
+    "ingredientes": [
+      "1 pollo entero",
+      "1 cebolla",
+      "2 dientes de ajo",
+      "1 cucharada de aceite de oliva",
+      "1 cucharadita de sal",
+      "1/2 cucharadita de pimienta negra"
+    ],
+    "instrucciones": [
+      "Precalentar el horno a 200 grados centígrados.",
+      "Lavar y secar el pollo.",
+      "Cortar la cebolla en rodajas finas.",
+      "Pelar y picar los ajos.",
+      "En una fuente para horno, colocar el pollo con la piel hacia arriba.",
+      "Salpimentar el pollo por dentro y por fuera.",
+      "Colocar la cebolla y los ajos alrededor del pollo.",
+      "Rociar el pollo con el aceite de oliva.",
+      "Hornear el pollo durante 1 hora o hasta que esté cocido."
+    ],
+    "categorías": ["Plato principal", "Pollo", "Horneado"],
+    "img": "https://cocinemosjuntos.com.co/media/mageplaza/blog/post/t/i/tips-para-preparar-pollo-al-horno-jugoso-y-perfecto_1_.jpg"
+  }
+]

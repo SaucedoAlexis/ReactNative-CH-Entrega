@@ -1,0 +1,1 @@
+export const base_url = "https://morfiapp-ccabc-default-rtdb.firebaseio.com/"
